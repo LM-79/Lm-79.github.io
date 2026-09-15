@@ -1,1 +1,149 @@
+Voici uniquement le code HTML/CSS/JS de la carcasse brute, structuré avec un système d'onglets pour afficher directement le contenu de chaque section.
 
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        nav {
+            width: 250px;
+            background-color: #1e293b;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        nav h1 {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li button {
+            width: 100%;
+            padding: 15px 20px;
+            background: none;
+            border: none;
+            color: #cbd5e1;
+            text-align: left;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        nav ul li button:hover, nav ul li button.active {
+            background-color: #334155;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Portfolio</h1>
+        <ul>
+            <li><button class="nav-btn active" onclick="openTab(event, 'cv')">CV</button></li>
+            <li><button class="nav-btn" onclick="openTab(event, 'tableau-synthese')">Tableau Synthèse</button></li>
+            <li><button class="nav-btn" onclick="openTab(event, 'veille-cyber')">Veille Techno CyberSécurité</button></li>
+            <li><button class="nav-btn" onclick="openTab(event, 'veille-zerotrust')">Veille Techno Zero Trust</button></li>
+            <li><button class="nav-btn" onclick="openTab(event, 'stage1')">Stage 1ère Année</button></li>
+            <li><button class="nav-btn" onclick="openTab(event, 'stage2')">Stage 2ème Année</button></li>
+            <li><button class="nav-btn" onclick="openTab(event, 'guide')">Guide de Bonne Conduite</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="cv" class="tab-content active">
+            <h2>CV</h2>
+            <!-- Contenu à ajouter -->
+        </section>
+
+        <section id="tableau-synthese" class="tab-content">
+            <h2>Tableau de Synthèse</h2>
+            <!-- Contenu à ajouter -->
+        </section>
+
+        <section id="veille-cyber" class="tab-content">
+            <h2>Veille Technologique CyberSécurité</h2>
+            <!-- Contenu à ajouter -->
+        </section>
+
+        <section id="veille-zerotrust" class="tab-content">
+            <h2>Veille Technologique Zero Trust</h2>
+            <!-- Contenu à ajouter -->
+        </section>
+
+        <section id="stage1" class="tab-content">
+            <h2>Stage 1ère Année</h2>
+            <!-- Contenu à ajouter -->
+        </section>
+
+        <section id="stage2" class="tab-content">
+            <h2>Stage 2ème Année</h2>
+            <!-- Contenu à ajouter -->
+        </section>
+
+        <section id="guide" class="tab-content">
+            <h2>Guide de Bonne Conduite</h2>
+            <!-- Contenu à ajouter -->
+        </section>
+    </main>
+
+    <script>
+        function openTab(evt, tabName) {
+            const contents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].classList.remove("active");
+            }
+
+            const buttons = document.getElementsByClassName("nav-btn");
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
+
+```
