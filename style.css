@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #1e293b;
+}
+
+/* ---------- Menu ---------- */
+nav {
+    width: 250px;
+    flex-shrink: 0;
+    background-color: #1e293b;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li button {
+    width: 100%;
+    padding: 15px 20px;
+    background: none;
+    border: none;
+    color: #cbd5e1;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+nav ul li button:hover,
+nav ul li button.active {
+    background-color: #334155;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li button:focus-visible {
+    outline: 2px solid #93c5fd;
+    outline-offset: -2px;
+}
+
+/* ---------- Contenu ---------- */
+main {
+    flex: 1;
+    min-width: 0;
+    padding: 40px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.intro {
+    max-width: 70ch;
+    margin-bottom: 28px;
+    line-height: 1.5;
+    color: #475569;
+}
+
+/* ---------- Articles ---------- */
+.mois {
+    margin: 32px 0 12px;
+    font-size: 1.1rem;
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 6px;
+}
+
+.mois:first-child {
+    margin-top: 0;
+}
+
+.article {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #334155;
+    border-radius: 6px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    max-width: 80ch;
+}
+
+.article h4 {
+    font-size: 1.05rem;
+    line-height: 1.35;
+    margin-bottom: 6px;
+}
+
+.article h4 a {
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.article h4 a:hover,
+.article h4 a:focus-visible {
+    text-decoration: underline;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.article p {
+    line-height: 1.55;
+}
+
+.lien-source {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #1d4ed8;
+}
+
+.vide {
+    color: #64748b;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 760px) {
+    body {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        flex: 1 1 auto;
+    }
+
+    nav ul li button {
+        text-align: center;
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 24px 16px;
+    }
+}

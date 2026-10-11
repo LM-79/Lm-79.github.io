@@ -4,86 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            display: flex;
-            min-height: 100vh;
-            background-color: #f4f4f9;
-        }
-
-        nav {
-            width: 250px;
-            background-color: #1e293b;
-            color: #fff;
-            padding: 20px 0;
-        }
-
-        nav h1 {
-            text-align: center;
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-        }
-
-        nav ul li button {
-            width: 100%;
-            padding: 15px 20px;
-            background: none;
-            border: none;
-            color: #cbd5e1;
-            text-align: left;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        nav ul li button:hover, nav ul li button.active {
-            background-color: #334155;
-            color: #fff;
-            font-weight: bold;
-        }
-
-        main {
-            flex: 1;
-            padding: 40px;
-        }
-
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-            color: #0f172a;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <nav>
         <h1>Portfolio</h1>
         <ul>
-            <li><button class="nav-btn active" onclick="openTab(event, 'cv')">CV</button></li>
-            <li><button class="nav-btn" onclick="openTab(event, 'tableau-synthese')">Tableau Synthèse</button></li>
-            <li><button class="nav-btn" onclick="openTab(event, 'veille-cyber')">Veille Techno CyberSécurité</button></li>
-            <li><button class="nav-btn" onclick="openTab(event, 'veille-zerotrust')">Veille Techno Zero Trust</button></li>
-            <li><button class="nav-btn" onclick="openTab(event, 'stage1')">Stage 1ère Année</button></li>
-            <li><button class="nav-btn" onclick="openTab(event, 'stage2')">Stage 2ème Année</button></li>
-            <li><button class="nav-btn" onclick="openTab(event, 'guide')">Guide de Bonne Conduite</button></li>
+            <li><button class="nav-btn active" data-tab="cv">CV</button></li>
+            <li><button class="nav-btn" data-tab="tableau-synthese">Tableau Synthèse</button></li>
+            <li><button class="nav-btn" data-tab="veille-cyber">Veille Techno CyberSécurité</button></li>
+            <li><button class="nav-btn" data-tab="veille-automatisation">Veille Techno Automatisation</button></li>
+            <li><button class="nav-btn" data-tab="stage1">Stage 1ère Année</button></li>
+            <li><button class="nav-btn" data-tab="stage2">Stage 2ème Année</button></li>
+            <li><button class="nav-btn" data-tab="guide">Guide de Bonne Conduite</button></li>
         </ul>
     </nav>
 
@@ -95,17 +29,19 @@
 
         <section id="tableau-synthese" class="tab-content">
             <h2>Tableau de Synthèse</h2>
-            <!-- Contenu à ajouter -->
+            <!-- Contenu à ajouter en fin de 2ème année -->
         </section>
 
         <section id="veille-cyber" class="tab-content">
             <h2>Veille Technologique CyberSécurité</h2>
-            <!-- Contenu à ajouter -->
+            <p class="intro">Cybersécurité sur les réseaux sociaux : articles récents sur le phishing, le piratage de comptes et les arnaques.</p>
+            <div class="articles" data-theme="cyber"></div>
         </section>
 
-        <section id="veille-zerotrust" class="tab-content">
-            <h2>Veille Technologique Zero Trust</h2>
-            <!-- Contenu à ajouter -->
+        <section id="veille-automatisation" class="tab-content">
+            <h2>Veille Technologique Automatisation informatique</h2>
+            <p class="intro">Automatisation informatique : RPA, agents IA, CI/CD et infrastructure as code.</p>
+            <div class="articles" data-theme="automatisation"></div>
         </section>
 
         <section id="stage1" class="tab-content">
@@ -124,21 +60,7 @@
         </section>
     </main>
 
-    <script>
-        function openTab(evt, tabName) {
-            const contents = document.getElementsByClassName("tab-content");
-            for (let i = 0; i < contents.length; i++) {
-                contents[i].classList.remove("active");
-            }
-
-            const buttons = document.getElementsByClassName("nav-btn");
-            for (let i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove("active");
-            }
-
-            document.getElementById(tabName).classList.add("active");
-            evt.currentTarget.classList.add("active");
-        }
-    </script>
+    <script src="js/articles.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
