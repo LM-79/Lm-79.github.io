@@ -92,7 +92,7 @@ function afficherArticles(conteneur) {
     });
 
     // Chaque mois possède sa propre colonne, tout en conservant les cartes d'articles.
-    Object.keys(parMois).sort().reverse().forEach(function (mois) {
+    Object.keys(parMois).sort().forEach(function (mois) {
         const colonne = document.createElement("section");
         colonne.className = "mois-colonne";
 

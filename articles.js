@@ -20,7 +20,7 @@ const ARTICLES = {
             titre: "Les réseaux sociaux sont-ils devenus la nouvelle boîte à arnaques ?",
             source: "Bitdefender (blog)",
             date: "2026-07-06",
-            ajoute: "2026-10",
+            ajoute: "2026-09",
             langue: "FR",
             url: "https://www.bitdefender.com/fr-fr/blog/hotforsecurity/les-reseaux-sociaux-sont-il-devenus-la-nouvelle-boite-a-arnaques",
             resume: "S'appuyant sur le rapport mondial 2026 de Bitdefender, l'article montre que 36 % des utilisateurs exposés à des arnaques sur les réseaux sociaux ont interagi avec elles. Les arnaques liées au mode de vie y réussissent mieux que les arnaques financières classiques."
@@ -29,7 +29,7 @@ const ARTICLES = {
             titre: "Cameroun. « Mon compte a été vidé » : la cyberpiraterie prend le large",
             source: "Le360 Afrique",
             date: "2026-07-26",
-            ajoute: "2026-10",
+            ajoute: "2026-09",
             langue: "FR",
             url: "https://afrique.le360.ma/societe/cameroun-mon-compte-a-ete-vide-la-cyberpiraterie-prend-le-large_ZDXCQHAIIZHJVDAFZBYUXY75WQ/",
             resume: "L'agence camerounaise des technologies de l'information a traité 32 500 plaintes l'an dernier, soit 30 % de plus. Les comptes Facebook, WhatsApp, Instagram et TikTok sont piratés tous les jours à Yaoundé, souvent suivis de fausses demandes d'aide envoyées aux proches de la victime."
@@ -77,7 +77,7 @@ const ARTICLES = {
             titre: "RPA, IA ou hybride : quelle automatisation choisir pour vos processus métier en 2026 ?",
             source: "Techsy",
             date: "2026-07-21",
-            ajoute: "2026-10",
+            ajoute: "2026-09",
             langue: "FR",
             url: "https://techsy.io/fr/blog/rpa-vs-ia-automatisation",
             resume: "L'article défend un modèle hybride : un agent IA décide et orchestre, tandis que des robots RPA exécutent les étapes qui suivent toujours les mêmes règles. Il cite une prévision de Gartner selon laquelle 40 % des applications d'entreprise intégreront des agents IA dédiés d'ici fin 2026, contre moins de 5 % en 2025. Blog d'un éditeur : l'angle est commercial."
@@ -95,7 +95,7 @@ const ARTICLES = {
             titre: "GitHub Actions for developers who still deploy manually",
             source: "DEV Community",
             date: "2026-08-03",
-            ajoute: "2026-10",
+            ajoute: "2026-09",
             langue: "EN",
             url: "https://dev.to/carlosjcastrog/github-actions-for-developers-who-still-deploy-manually-22he",
             resume: "L'article explique comment placer le pipeline CI/CD directement dans le dépôt, avec des workflows YAML déclenchés par les événements Git. Il détaille aussi les nouveautés de juillet-août 2026 : Copilot CLI utilisable dans un workflow sans jeton personnel, et version minimale imposée aux runners auto-hébergés."
