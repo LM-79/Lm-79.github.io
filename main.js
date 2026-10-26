@@ -85,21 +85,29 @@ function afficherArticles(conteneur) {
         return;
     }
 
-    // regroupe par mois d'ajout, du plus récent au plus ancien
+    // Regroupe les articles par mois d'ajout, du plus récent au plus ancien.
     const parMois = {};
     liste.forEach(function (a) {
         (parMois[a.ajoute] = parMois[a.ajoute] || []).push(a);
     });
 
+    // Chaque mois possède sa propre colonne, tout en conservant les cartes d'articles.
     Object.keys(parMois).sort().reverse().forEach(function (mois) {
+        const colonne = document.createElement("section");
+        colonne.className = "mois-colonne";
+
         const titreMois = document.createElement("h3");
         titreMois.className = "mois";
         titreMois.textContent = formatMois(mois) + " (" + parMois[mois].length + " articles)";
-        conteneur.appendChild(titreMois);
+        colonne.appendChild(titreMois);
 
         parMois[mois]
             .sort(function (x, y) { return y.date.localeCompare(x.date); })
-            .forEach(function (a) { conteneur.appendChild(creerArticle(a)); });
+            .forEach(function (a) {
+                colonne.appendChild(creerArticle(a));
+            });
+
+        conteneur.appendChild(colonne);
     });
 }
 
