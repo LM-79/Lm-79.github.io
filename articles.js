@@ -56,7 +56,7 @@ const ARTICLES = {
             titre: "PHP : deux failles critiques ont fuité avant l'heure, un correctif d'urgence arrive ce 21 octobre !",
             source: "IT-Connect (Florian Burnel)",
             date: "2026-10-21",
-            ajoute: "2026-10",
+            ajoute: "2026-11",
             langue: "FR",
             url: "https://www.it-connect.fr/php-failles-critiques-rce-cve-2026-109618-cve-2026-109619/",
             resume: "Un message supprimé depuis sur Hacker News annonçait deux failles d'exécution de code à distance dans PHP, confirmées ensuite par la société watchTowr (CVE-2026-109618 et CVE-2026-109619). L'équipe de sécurité de PHP a alors annoncé un correctif pour le 21 octobre à 16 h, heure de Paris. D'après le CERT-EU, les versions corrigées sont PHP 8.5.12, 8.4.27, 8.3.36 et 8.2.35."
@@ -65,7 +65,7 @@ const ARTICLES = {
             titre: "Compte Instagram ou Facebook piraté, faux compte à votre nom : récupérer l'accès, faire effacer et obtenir réparation (2026)",
             source: "Kohen Avocats",
             date: "2026-10-14",
-            ajoute: "2026-10",
+            ajoute: "2026-11",
             langue: "FR",
             url: "https://kohenavocats.fr/2026/10/14/compte-instagram-facebook-pirate-faux-compte-effacer-plainte-reparation-2026/",
             resume: "L'article propose une méthode pour récupérer l'accès à un compte sans détruire les preuves, exiger l'effacement d'un faux compte, déposer plainte et saisir la CNIL. Il distingue le piratage, qui relève de la sécurisation et de la récupération d'accès, de la création d'un faux compte, qui relève de l'usurpation d'identité. Blog d'un cabinet d'avocats : l'angle est juridique."
@@ -113,7 +113,7 @@ const ARTICLES = {
             titre: "n8n Agents : quand l'automatisation devient agentique",
             source: "L'AGENT X",
             date: "2026-10-02",
-            ajoute: "2026-10",
+            ajoute: "2026-11",
             langue: "FR",
             url: "https://lagentx.com/n8n-agents-automatisation-agentique/",
             resume: "Le 25 septembre 2026, n8n a présenté un nouveau type d'agent qui reçoit un objectif, choisit lui-même ses outils et détermine les étapes à suivre. Selon l'article, l'intérêt principal est de faire travailler agents et workflows ensemble, avec des agents utilisables directement depuis Slack, Telegram, Linear ou Discord. Blog d'une agence spécialisée en IA : l'angle est commercial."
@@ -122,7 +122,7 @@ const ARTICLES = {
             titre: "Terraform in CI/CD: Plan/Apply Gates with GitHub Actions",
             source: "DEV Community (manojkagitha)",
             date: "2026-10-26",
-            ajoute: "2026-10",
+            ajoute: "2026-11",
             langue: "EN",
             url: "https://dev.to/manojkagitha/terraform-in-cicd-planapply-gates-with-github-actions-1onn",
             resume: "Les modifications d'infrastructure passent par un plan sur la pull request, une relecture, puis un apply lancé depuis la CI avec des identifiants à courte durée de vie. L'authentification OIDC remplace les clés d'accès stockées dans GitHub Secrets, et la promotion se fait de staging vers prod, jamais en parallèle."
