@@ -24,7 +24,177 @@
     <main>
         <section id="cv" class="tab-content active">
             <h2>CV</h2>
-            <!-- Contenu à ajouter -->
+
+            <div class="cv">
+
+                <header class="cv-entete">
+                    <div class="cv-haut">
+                        <!--
+                            Photo (facultatif) : ajouter photo.jpg à la racine du dépôt,
+                            puis retirer les marques de commentaire autour de la ligne ci-dessous.
+                            <img class="cv-photo" src="photo.jpg" alt="Portrait de Léopold-Marie Papius">
+                        -->
+                        <div>
+                            <p class="cv-nom">Léopold-Marie <span>PAPIUS</span></p>
+                            <p class="cv-titre">Étudiant en BTS SIO option SISR</p>
+                            <p class="cv-presentation">
+                                Je suis en première année de BTS SIO option SISR au lycée Paul Sabatier, à Carcassonne.
+                                J'ai validé une première année de BTS CIEL (Cybersécurité, Informatique &amp; Réseaux) et
+                                réalisé deux stages : scripting et déploiement au Centre Spatial Guyanais (CNES),
+                                puis installation de systèmes de sûreté électronique chez ERYMA.
+                            </p>
+                        </div>
+                    </div>
+
+                    <dl class="cv-faits">
+                        <div>
+                            <dt>Localisation</dt>
+                            <dd>Carcassonne (11)</dd>
+                        </div>
+                        <div>
+                            <dt>Formation en cours</dt>
+                            <dd>BTS SIO option SISR, 2026 – 2028</dd>
+                        </div>
+                        <div>
+                            <dt>Langues</dt>
+                            <dd>Français (maternelle), anglais B2 (non certifié)</dd>
+                        </div>
+                    </dl>
+                </header>
+
+                <div class="cv-colonnes">
+
+                    <section class="cv-colonne">
+                        <h3 class="cv-titre-colonne">Compétences</h3>
+
+                        <div class="cv-carte">
+                            <h4>Systèmes &amp; réseaux</h4>
+                            <p>Linux Debian (ligne de commande), adressage IP, réseaux locaux, déploiement.</p>
+                        </div>
+                        <div class="cv-carte">
+                            <h4>Scripting &amp; développement</h4>
+                            <p>PowerShell (hachage SHA-512), Python, C++, HTML.</p>
+                        </div>
+                        <div class="cv-carte">
+                            <h4>Support &amp; terrain</h4>
+                            <p>Diagnostic, documentation technique, câblage courants faibles, sûreté électronique.</p>
+                        </div>
+                        <div class="cv-carte">
+                            <h4>Logiciels maîtrisés</h4>
+                            <p>Visual Studio, VS Code, PowerShell ISE.</p>
+                        </div>
+                        <div class="cv-carte">
+                            <h4>Savoir-être</h4>
+                            <ul class="cv-puces">
+                                <li>Rigueur et sens du détail</li>
+                                <li>Autonomie dans le travail</li>
+                                <li>Capacité d'analyse</li>
+                                <li>Esprit d'équipe</li>
+                                <li>Faculté d'adaptation</li>
+                                <li>Curiosité technique</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="cv-colonne">
+                        <h3 class="cv-titre-colonne">Expériences</h3>
+
+                        <article class="cv-carte">
+                            <div class="cv-carte-entete">
+                                <span>Mai – juillet 2025</span>
+                                <span class="cv-etiquette">Stage</span>
+                            </div>
+                            <h4>Assistant analyste, sécurité de l'information et contrôle export</h4>
+                            <p class="cv-lieu">Centre Spatial Guyanais (CNES), Kourou</p>
+                            <ul>
+                                <li>Mise en place d'une procédure de restauration « état d'usine » pour les postes de tests Pentest, utilisée par l'équipe après mon départ.</li>
+                                <li>Écriture de scripts PowerShell de contrôle d'intégrité des fichiers (hachage SHA-512), avec génération automatique des empreintes.</li>
+                                <li>Préparation de médias bootables, gestion des partitions et manipulation d'images disque pour le déploiement.</li>
+                                <li>Rédaction de la documentation technique pour assurer la continuité du service après mon départ.</li>
+                            </ul>
+                        </article>
+
+                        <article class="cv-carte">
+                            <div class="cv-carte-entete">
+                                <span>Janvier – février 2023</span>
+                                <span class="cv-etiquette">Stage</span>
+                            </div>
+                            <h4>Technicien en systèmes de sécurité électronique</h4>
+                            <p class="cv-lieu">ERYMA, Toulouse</p>
+                            <ul>
+                                <li>Lecture de schémas d'implantation pour positionner caméras et détecteurs sur site.</li>
+                                <li>Pose de câbles courants faibles et de chemins de câbles, raccordement des périphériques aux centrales.</li>
+                                <li>Paramétrage de centrales d'alarme : zones, sensibilité des caméras, droits des badges.</li>
+                                <li>Diagnostic de pannes en clientèle et remplacement du matériel défectueux.</li>
+                            </ul>
+                        </article>
+
+                        <article class="cv-carte">
+                            <div class="cv-carte-entete">
+                                <span>En cours</span>
+                                <span class="cv-etiquette">Projet personnel</span>
+                            </div>
+                            <h4>Home lab : développement de jeux vidéo et expérimentation</h4>
+                            <ul>
+                                <li>Mise en place d'un environnement personnel pour le développement de jeux vidéo et la programmation générale.</li>
+                                <li>Configuration et maintenance autonome du poste : systèmes, gestion des projets.</li>
+                                <li>Outils utilisés : Visual Studio, Visual Studio Code.</li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <section class="cv-colonne">
+                        <h3 class="cv-titre-colonne">Parcours</h3>
+
+                        <div class="cv-carte">
+                            <p class="cv-annee">2026 – 2028</p>
+                            <h4>BTS SIO option SISR</h4>
+                            <p class="cv-lieu">Lycée Paul Sabatier, Carcassonne (en cours)</p>
+                        </div>
+                        <div class="cv-carte">
+                            <p class="cv-annee">2023 – 2025</p>
+                            <h4>BTS CIEL</h4>
+                            <p class="cv-lieu">Cybersécurité, Informatique &amp; Réseaux (1<sup>re</sup> année validée)</p>
+                        </div>
+                        <div class="cv-carte">
+                            <p class="cv-annee">2020 – 2023</p>
+                            <h4>Bac Pro SN</h4>
+                            <p class="cv-lieu">Systèmes Numériques, option ARED</p>
+                        </div>
+                        <div class="cv-carte">
+                            <h4>Centres d'intérêt</h4>
+                            <ul class="cv-puces">
+                                <li>Jeux vidéo (développement personnel, home lab)</li>
+                                <li>Musique (guitare)</li>
+                                <li>Lecture (science-fiction, fantasy)</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+
+                <footer class="cv-contact">
+                    <div>
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>
+                                <span>E-mail</span>
+                                <a href="mailto:papius.lm27@gmail.com">papius.lm27@gmail.com</a>
+                            </li>
+                            <li>
+                                <span>LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/l%C3%A9opold-marie-papius" target="_blank" rel="noopener noreferrer">Léopold-Marie Papius</a>
+                            </li>
+                            <li>
+                                <span>Localisation</span>
+                                Carcassonne (11)
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="bouton" href="CV_Leopold_PAPIUS.pdf" download>Télécharger mon CV (PDF)</a>
+                </footer>
+
+            </div>
         </section>
 
         <section id="tableau-synthese" class="tab-content">
